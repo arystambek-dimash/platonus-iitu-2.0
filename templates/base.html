@@ -1,0 +1,39 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+</head>
+<body>
+<nav>
+    <div class="wrapper">
+        <div class="sidebar">
+            <h2>platonus</h2>
+            <ul>
+                <li><a href="#">Личные данные</a></li>
+                <li><a href="#">Учебная аудитория</a></li>
+                <li><a href="#">Задания</a></li>
+                <li><a href="#">Журнал</a></li>
+                <li><a href="#">Расписание</a></li>
+                <li><a href="#">Индивидуальный учебный план</a></li>
+                <li><a href="#">Календарь</a></li>
+                <li><a href="#">Транскрипт</a></li>
+                <li><a href="#">Тестирование</a></li>
+                <li><a href="#">Апелляции</a></li>
+                <li><a href="#">Библиотека</a></li>
+                <li><a href="#">Параметры авторизация</a></li>
+                <li><a href="#">Аттестация онлайн</a></li>
+                <li><a href="#">ЦОО</a></li>
+                <li><a href="#">Анкетирование</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="main_content">
+{% block content %}
+{% endblock %}
+</div>
+</body>
+</html>
